@@ -1,7 +1,7 @@
 -- By unknownn#6188 --
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("HoodWare", "GrapeTheme")
+local Window = Library.CreateLib("HoodAssist", "GrapeTheme")
 local Tab = Window:NewTab("Aiming")
 local Section = Tab:NewSection("Aiming")
 Section:NewButton("Silent Aimlock", "Aimlock Press Q to lock Onto A Player", function()
@@ -37,7 +37,7 @@ x("HoodWare", "Loaded", 3)
 
 
     if getgenv().flashyes == true then
-                       x("HoodWare", "Already Loaded", 5)
+                       x("HoodAssist", "Already Loaded", 5)
         return
     end
     getgenv().flashyes = true
@@ -50,10 +50,10 @@ x("HoodWare", "Loaded", 3)
                Locking = not Locking
                if Locking then
                Plr =  getClosestPlayerToCursor()
-                x("HoodWare", ""..Plr.Character.Humanoid.DisplayName, 3)
+                x("HoodAssist", ""..Plr.Character.Humanoid.DisplayName, 3)
 elseif not Locking then
     if Plr then Plr = nil
-                       x("HoodWare", "Unlocked", 3)
+                       x("HoodAssist", "Unlocked", 3)
      
          
 end
@@ -134,7 +134,7 @@ Section:NewButton("Tracer Lock", "Tracer Lock OP", function()
         Thickness = 2,
         Transparency = 1,
         Color = Color3.fromRGB(106, 13, 173),
-        FOV = false
+        FOV = true
     }
 
 }
